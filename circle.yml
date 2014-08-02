@@ -18,8 +18,9 @@ dependencies:
   post:
     - npm install browserstack-cli -g
     - npm install testem -g
+    - browserstack -t 360 tunnel localhost:<port>
+        timeout: 360
 
 test:
   override:
     - testem ci
-        timeout: 360

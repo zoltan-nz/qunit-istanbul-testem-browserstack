@@ -1,7 +1,4 @@
 framework: mocha
-on_start:
-  command: browserstack -t 360 tunnel localhost:<port>
-  wait_for_text: Tunnel is running
 
 launchers:
 
