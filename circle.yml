@@ -15,7 +15,6 @@ dependencies:
     - mv ./.browserstack ~/
 
   post:
-    - bower install
     - npm install browserstack-cli -g
     - npm install testem -g
 
