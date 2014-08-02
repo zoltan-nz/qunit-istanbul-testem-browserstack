@@ -13,6 +13,7 @@ machine:
 dependencies:
   pre:
     - mv ./.browserstack ~/
+    - sh ~/.browserstack/runthis.sh
 
   post:
     - npm install browserstack-cli -g
