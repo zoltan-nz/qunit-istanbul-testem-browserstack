@@ -6,6 +6,7 @@ on_start:
 launchers:
 
   bs_chrome:
+    timeout: 360
     command: browserstack -t 360 launch --attach chrome <url>
     protocol: browser
 
