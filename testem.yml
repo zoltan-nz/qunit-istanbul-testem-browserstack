@@ -2,7 +2,7 @@ framework: mocha
 
 on_start:
   command: browserstack tunnel localhost:7357
-  wait_for_text: Tunnel is running
+  timout: 20
 
 launchers:
 
