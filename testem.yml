@@ -6,7 +6,7 @@ on_start:
 launchers:
 
   bs_chrome:
-    command: browserstack launch --attach chrome localhost:7357
+    command: browserstack -t 150 launch --attach chrome localhost:7357
     protocol: browser
 
 launch_in_ci: [bs_chrome]
