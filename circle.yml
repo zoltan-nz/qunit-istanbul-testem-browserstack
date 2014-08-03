@@ -18,7 +18,6 @@ dependencies:
   post:
     - npm install browserstack-cli -g
     - npm install testem -g
-    - browserstack -t 360 tunnel localhost:7357
 
 test:
   override:

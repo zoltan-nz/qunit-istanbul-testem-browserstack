@@ -1,10 +1,13 @@
 framework: mocha
 
+on_start:
+  command: browserstack tunnel localhost:7357
+  wait_for_text: Tunnel is running
+
 launchers:
 
   bs_chrome:
-    timeout: 360
-    command: browserstack -t 360 launch --attach chrome <url>
+    command: browserstack -t 120 launch --attach chrome localhost:7357
     protocol: browser
 
 launch_in_ci: [bs_chrome]
