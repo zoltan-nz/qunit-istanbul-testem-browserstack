@@ -1,6 +1,8 @@
 framework: mocha
 on_start:
-  command: browserstack tunnel localhost:7357 &
+  command: browserstack tunnel localhost:7357
+  wait_for_text: Press Ctrl-C to exit
+  timout: 150
 
 launchers:
 
