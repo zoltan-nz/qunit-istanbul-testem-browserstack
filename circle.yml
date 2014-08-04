@@ -16,3 +16,4 @@ dependencies:
 test:
   override:
     - testem ci
+    - testem ci
