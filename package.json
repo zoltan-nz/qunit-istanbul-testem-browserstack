@@ -1,0 +1,31 @@
+{
+  "name": "test-app",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "",
+    "grunt-contrib-watch": "",
+    "grunt-ember-templates": "",
+    "grunt-contrib-jshint": "",
+    "grunt-contrib-connect": "",
+    "grunt-connect-proxy": "",
+    "grunt-contrib-clean": "",
+    "connect-livereload": "",
+    "grunt-concurrent": "",
+    "load-grunt-tasks": "",
+    "glob": "",
+    "grunt-contrib-copy": "",
+    "grunt-usemin": "",
+    "grunt-contrib-concat": "",
+    "grunt-contrib-uglify": "",
+    "grunt-rev": "",
+    "grunt-contrib-cssmin": "",
+    "testem": "",
+    "grunt-autoprefixer": "",
+    "grunt-sass": "",
+    "grunt-svgstore": "",
+    "grunt-preprocess": "",
+    "grunt-es6-module-transpiler": "",
+    "grunt-concat-sourcemap": ""
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "dependencies": {
+    "ember": "",
+    "ember-data": "",
+    "handlebars": "",
+    "jquery": "",
+    "ember-resolver": "stefanpenner/ember-jj-abrams-resolver#master",
+    "loader": "stefanpenner/loader.js#1.0.0",
+    "ember-load-initializers": "git://github.com/stefanpenner/ember-load-initializers.git#0.0.1"
+  },
+  "devDependencies": {
+    "qunit": "",
+    "ic-ajax": "",
+    "pretender": ""
+  }
+}
