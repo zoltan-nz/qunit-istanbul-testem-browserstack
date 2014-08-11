@@ -15,9 +15,5 @@ dependencies:
 
 test:
   override:
-    - browserstack tunnel localhost:7357
-        background: true
-    - browserstack launch chrome --attach --timeout 300 http://localhost:7357
-        background: true
     - testem ci
     - testem ci
