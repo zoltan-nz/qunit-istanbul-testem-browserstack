@@ -256,7 +256,7 @@ module.exports = function (grunt) {
         ]
       }
     },
-    // Put files not handled in other tasks here
+    Put files not handled in other tasks here
     copy: {
       fonts: {
         files: [
@@ -267,7 +267,7 @@ module.exports = function (grunt) {
             cwd: 'vendor/',
             dest: '<%= yeoman.app %>/styles/fonts/',
             src: [
-              'bootstrap-sass-official/assets/fonts/bootstrap/**/*'
+              'bootstrap-sass-official/assets/fonts/bootstrap/**'
             ]
           }
         ]
