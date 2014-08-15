@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- endbuild -->
+
     <!-- @ifdef TESTS -->
     <link rel="stylesheet" type="text/css" href="/vendor/qunit/qunit/qunit.css">
     <!-- @endif -->
@@ -14,7 +18,7 @@
 <div id="ember-app"></div>
 
 <!-- build:js(.) assets/vendor.min.js -->
-<script type="text/javascript" src="/vendor/jquery/jquery.js"></script>
+<script type="text/javascript" src="/vendor/jquery/dist/jquery.js"></script>
 <!-- @ifndef PRODUCTION -->
 <script type="text/javascript" src="/vendor/handlebars/handlebars.js"></script>
 <script type="text/javascript" src="/vendor/ember/ember.js"></script>
@@ -25,14 +29,6 @@
 <script type="text/javascript" src="/vendor/ember/ember.prod.js"></script>
 <script type="text/javascript" src="/vendor/ember-data/ember-data.prod.js"></script>
 <!-- @endif -->
-<script type="text/javascript" src="/vendor/jquery.cookie/jquery.cookie.js"></script>
-<script type="text/javascript" src="/vendor/moment/moment.js"></script>
-<script type="text/javascript" src="/vendor/d3/d3.js"></script>
-<script type="text/javascript" src="/vendor/queue-async/queue.js"></script>
-<script type="text/javascript" src="/vendor/topojson/topojson.js"></script>
-<script type="text/javascript" src="/vendor/stringjs/lib/string.js"></script>
-<script type="text/javascript" src="/vendor/local/bootstrap-datepicker/bootstrap-datepicker.js"></script>
-<script type="text/javascript" src="/vendor/local/bootstrap-dropdown/bootstrap-dropdown.js"></script>
 <script type="text/javascript" src="/vendor/loader/loader.js"></script>
 <script type="text/javascript" src="/vendor/ember-resolver/dist/ember-resolver.js"></script>
 <script type="text/javascript" src="/vendor/ember-load-initializers/ember-load-initializers.js"></script>
@@ -42,22 +38,6 @@
 <script type="text/javascript" src="assets/templates.js"></script>
 <script type="text/javascript" src="assets/application.js"></script>
 <!-- endbuild -->
-
-<!-- @ifdef PRODUCTION -->
-<script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-46364629-2']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-</script>
-<script type="text/javascript" src="//s3.amazonaws.com/carnivalmobile-assets/js/raygun.min.js"></script>
-<script type="text/javascript">Raygun.init("<!-- @echo RAYGUN_KEY -->");</script>
-<!-- @endif -->
 
 <!-- @ifdef TESTS -->
 <script type="text/javascript" src="/vendor/qunit/qunit/qunit.js"></script>
@@ -69,7 +49,7 @@
 
 <!-- @ifndef TESTS -->
 <script type="text/javascript">
-    window.CarnivalMobile = require('carnival/app')['default'].create();
+    window.App = require('app')['default'].create();
 </script>
 <!-- @endif -->
 
@@ -79,7 +59,7 @@
 <script type="text/javascript" src="/vendor/ic-ajax/dist/globals/main.js"></script>
 <script type="text/javascript" src="tests.js"></script>
 <script type="text/javascript">
-    require('carnival/tests/unit/index')['default'];
+    require('tests/unit/index')['default'];
 </script>
 <!-- @endif -->
 
@@ -89,7 +69,7 @@
 <script type="text/javascript" src="/vendor/FakeXMLHttpRequest/fake_xml_http_request.js"></script>
 <script type="text/javascript" src="tests.js"></script>
 <script type="text/javascript">
-    window.CarnivalMobile = require('carnival/tests/integration/index')['default'];
+    window.App = require('tests/integration/index')['default'];
 </script>
 <!-- @endif -->
 
@@ -97,6 +77,20 @@
 <script type="text/javascript" src="http://localhost:35729/livereload.js?snipver=1"></script>
 <!-- @endif -->
 
-<!-- @include assets/sprite.svg -->
+<!-- build:js scripts/plugins.js -->
+<script src="/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+<script src="/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+<script src="/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+<script src="/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+<script src="/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+<script src="/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+<script src="/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+<script src="/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+<script src="/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+<!-- endbuild -->
+
 </body>
 </html>
